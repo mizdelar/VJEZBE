@@ -6,14 +6,14 @@ use zupanije2105;
 
 create table zupanija(
     sifra int not null primary key auto_increment,
-    naziv varchar(50),
+    naziv varchar(50) not null,
     zupan int not null
 
 );
 
 create table zupan(
     sifra int not null primary key auto_increment,
-    ime varchar(50),
+    ime varchar(50) not null,
     prezime varchar(50) not null
 
 );
@@ -28,12 +28,14 @@ create table opcina(
 create table mjesto(
     sifra int not null primary key auto_increment,
     opcina int not null,
-    naziv varchar(50)
+    naziv varchar(50) not null
 );
 
 alter table zupanija add foreign key (zupan) references zupan(sifra);
 alter table opcina add foreign key (zupanija)  references zupanija(sifra);
 alter table mjesto add foreign key (opcina) references opcina(sifra);
+
+
 
 insert into zupan (sifra,ime,prezime)
 values (null,'Pero','Peric');
@@ -87,6 +89,12 @@ update zupan set ime='Mihael' where sifra=1;
 update zupan set prezime='Zdelar' where sifra=1;
 
 update zupan set ime='Miroslav',prezime='Miric' where sifra=2;
+
+delete from mjesto where sifra=1;
+
+delete from opcina where sifra=1;
+
+
 
 
 
