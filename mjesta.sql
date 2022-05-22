@@ -914,3 +914,6 @@ INSERT INTO  mjesto  ( postanskibroj ,  zupanija ,  naziv ) VALUES
 ('53291', 9, 'Novalja'),
 ('53294', 9, 'Lun'),
 ('53296', 9, 'Zubovići');
+
+
+select * from mjesto where postanskibroj like '31%';
