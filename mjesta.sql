@@ -917,3 +917,6 @@ INSERT INTO  mjesto  ( postanskibroj ,  zupanija ,  naziv ) VALUES
 
 
 select * from mjesto where postanskibroj like '31%';
+
+insert into mjesto (postanskibroj ,  zupanija ,  naziv)
+values (31209,14,'Buril');
