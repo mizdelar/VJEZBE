@@ -1,4 +1,4 @@
-# c:\xampp\mysql\bin\mysql -uroot --default_character_set=utf8 c:\users\mzdel\documents\github\mizdelar\domacezadace\vjezbe\kolokvijvjezba1.sql
+# c:\xampp\mysql\bin\mysql -uroot < --default_character_set=utf8 c:\users\mzdel\documents\github\mizdelar\domacezadace\vjezbe\kolokvijvjezba1.sql
 
 drop database if exists kolokvijvjezba1;
 create database kolokvijvjezba1;
